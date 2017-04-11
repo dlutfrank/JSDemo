@@ -28,3 +28,10 @@ let data = fs.readFile('input.data',function(err,data){
 });
 console.log('Program started');
 console.log(__filename);
+var interval = setInterval(function(){
+    console.log('hello -');
+},1000);
+setTimeout(function(){
+    clearTimeout(interval);
+    console.log('clear time interval');
+},8000);
